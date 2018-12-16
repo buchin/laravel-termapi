@@ -1,7 +1,7 @@
 {
     "name": "buchin/laraveltermapi",
-    "description": ":description",
-    "license": "license",
+    "description": "Automatically save search engine keyword to Term API",
+    "license": "MIT",
     "authors": [
         {
             "name": "author name",
