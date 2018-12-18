@@ -23,6 +23,7 @@ class SaveTerm
                 insert_term([
                     'token' => config('laraveltermapi.token'),
                     'keyword' => $keyword,
+                    'url' => url()->full()
                 ]);
             }
         }
