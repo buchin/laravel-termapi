@@ -14,18 +14,7 @@ class SaveTerm
      */
     public function handle($request, Closure $next)
     {
-        if(SearchTerm::isCameFromSearchEngine()){
-
-            $keyword = SearchTerm::get();
-
-            if(!empty($keyword)){
-            
-                insert_term([
-                    'token' => config('laraveltermapi.token'),
-                    'keyword' => $keyword,
-                ]);
-            }
-        }
+        termapi(config('laraveltermapi.token'));
 
         return $next($request);
     }
